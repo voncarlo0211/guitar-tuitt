@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Educational Resource Hub Application</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    /* *{
+        border: 1px solid red;
+    } */
+    /* Optional custom styles */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      margin: auto;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    /* card section */
+    .card {
+      border: none;
+      transition: transform 0.3s ease;
+    }
+    .card img {
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      max-height: 200px;
+      object-fit: cover;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* featured section */
+    /* #featured {
+    background: url('https://live.staticflickr.com/102/283493861_65e2224db5_b.jpg') center center/cover no-repeat;
+    position: relative;
+    height: 90vh;
+} */
+
+
+  </style>
+  <body>
+    <!-- Navigation Section -->
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Guitar Tuitt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#categories-section">Categories</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+               
+              </ul>
+            </div>
+      </nav>
+    </header>
+    <!-- Home Section -->
+    <section id="home">
+      <div id="introduction">
+        <div class="container text-center my-5">
+        <h1 class="display-1">Fingerstyle Beginner Lesson</h1>
+        <p class="lead m-5">Welcome to your first guitar lesson! Whether you've just picked up a guitar for the first time or are revisiting it after a while, this beginner's guide will help you get started on your musical journey.</p>
+      </div>
+          <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-8">
+        <div class="video-container">
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe> -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/94-KCPOxd2Y" title="George Michael - Careless Whisper Fingerstyle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+      </div>
+
+      <div id="featured">
+        <div class="container mt-5">
+            <h1 class="display-1 text-center m-5 pt-5">Featured</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 pt-5">
+              <!-- Card 1 -->
+              <div class="col">
+                
+                <div class="card h-100">
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%;">
+                      <iframe src="https://www.youtube.com/embed/08O1foYdJ9s"
+                              title="Duesenberg Caribou"
+                              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Guitar Tutorial 2</h5>
+                      <p class="card-text">Master advanced techniques and soloing.</p>
+                      <a href="#" class="btn btn-primary">View Tutorial</a>
+                    </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col">
+                <!-- <div class="card h-100">
+                  <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Tutorial 2">
+                  <iframe width="500" height="300" src="https://www.youtube.com/embed/lkOBgvAtvzI" title="Duesenberg Caribou" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Guitar Tutorial 2</h5>
+                    <p class="card-text">Master advanced techniques and soloing.</p>
+                    <a href="#" class="btn btn-primary">View Tutorial</a>
+                  </div>
+                </div> -->
+                <div class="card h-100">
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%;">
+                      <iframe src="https://www.youtube.com/embed/lkOBgvAtvzI"
+                              title="Duesenberg Caribou"
+                              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Guitar Tutorial 2</h5>
+                      <p class="card-text">Master advanced techniques and soloing.</p>
+                      <a href="#" class="btn btn-primary">View Tutorial</a>
+                    </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col">
+                <div class="card h-100">
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%;">
+                    <iframe src="https://www.youtube.com/embed/aRNaXrcGt9E"
+                            title="Duesenberg Caribou"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Guitar Tutorial 3</h5>
+                    <p class="card-text">Master advanced techniques and soloing.</p>
+                    <a href="#" class="btn btn-primary">View Tutorial</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more cards as needed -->
+           
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories-section">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <h2 class="text-center m-5">Categories</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-4 col-md-4 mb-3">
+                            <img src="images/1.png" class="img-fluid rounded" alt="...">
+                        </div>
+                        <div class="col-4 col-md-4 mb-3 ">
+                            <img src="images/2.png" class="img-fluid rounded" alt="...">
+                        </div>
+                        <div class="col-4 col-md-4 mb-3">
+                            <img src="images/3.png" class="img-fluid rounded" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mx-auto">
+                    <h2 class="text-center m-5">Resources</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-4 col-md-4 mb-3 mb-md-0">
+                            <img src="images/4.png" class="img-fluid rounded-circle" alt="...">
+                        </div>
+                        <div class="col-4 col-md-4 mb-3 mb-md-0">
+                            <img src="images/5.png" class="img-fluid rounded-circle" alt="...">
+                        </div>
+                        <div class="col-4 col-md-4 mb-3 mb-md-0">
+                            <img src="images/6.png" class="img-fluid rounded-circle" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- About Section -->
+    <section id="about" class="bg-dark text-white p-sm-5 m-5">
+        <div class="container">
+            <h1 class="display-1 text-center m-5">ABOUT</h1>
+    
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="mission">
+                        <h2 class="text-center">Mission</h2>
+                        <p>our mission is to empower aspiring guitarists of all levels with the knowledge and skills they need to unleash their musical potential. Through comprehensive, structured, and engaging online lessons, we aim to:</p>
+                        <ul>
+                            <li>Provide accessible and high-quality guitar instruction tailored to individual learning styles.</li>
+                            <li>Foster a supportive community where learners can connect, share, and grow together.</li>
+                            <li>Inspire creativity and confidence in playing the guitar, from beginners to advanced players.</li>
+                            <li>Continuously innovate and expand our curriculum to meet the evolving needs of musicians worldwide.</li>
+                        </ul>
+                        <p>Join us on a journey to master the art of guitar playing, guided by passionate instructors dedicated to your musical success.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="contact">
+                        <div class="text-center">
+                            <h2 class="m-5">Contact Information</h2>
+                            <p><strong>Email:</strong> vonvitz@gmail.com</p>
+                            <p><strong>Phone:</strong> +123456789</p>
+                            <p><strong>Address:</strong> 123 Guitar Street, Music City</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
